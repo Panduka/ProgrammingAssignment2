@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## "bfinverse" and sets the value of the inverse in the cache
 ## via the setinverse
 
-function.cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if(!is.null(i)) {
     message("getting cached data.")
